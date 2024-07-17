@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #355C7D;
+    background-color: #F8B195;
+}
+
+header {
+    background-color: #355C7D;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.button {
+    background-color: #F67280;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #C06C84;
+}
+
+.feature {
+    margin: 20px 0;
+}
