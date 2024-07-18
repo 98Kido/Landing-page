@@ -3,66 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>GPA Calculator Landing Page</title>
+    <link rel="stylesheet" href="static_styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#intro">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <section id="intro">
-        <img src="cover-image.jpg" alt="Cover Image">
-        <h1>My Project</h1>
-        <p>One-line phrase or description of the project.</p>
-        <a href="https://mydeployedapp.com" class="button">View Project</a>
+        <div class="container">
+            <img src="coverpicture.jpg" alt="Cover Image">
+            <h1>GPA Calculator</h1>
+            <p>The GPA Calculator enables students to easily calculate their GPA scores and track their academic progress per semester.</p>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+            <a href="https://github.com/98Kido/GPA_Calculator" class="btn">View Deployed Project</a>
+            <button id="openModalBtn" class="btn">Contact Us</button>
+        </div>
     </section>
 
     <section id="features">
-        <h2>Features</h2>
-        <div class="feature">
-            <img src="feature1.jpg" alt="Feature 1">
-            <h3>Feature 1</h3>
-            <p>Description of Feature 1.</p>
-        </div>
-        <div class="feature">
-            <img src="feature2.jpg" alt="Feature 2">
-            <h3>Feature 2</h3>
-            <p>Description of Feature 2.</p>
-        </div>
-        <div class="feature">
-            <img src="feature3.jpg" alt="Feature 3">
-            <h3>Feature 3</h3>
-            <p>Description of Feature 3.</p>
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="feature">
+                <img src="Feature1.jpg" alt="Feature 1 Image">
+                <h3>Easy GPA Calculation</h3>
+                <p>Calculate your GPA scores quickly and easily by entering your subject marks and obtained grades. Using the table to help you convert and understand how it works.</p>
+            </div>
+            <div class="feature">
+                <img src="path/to/feature2-image.jpg" alt="Feature 2 Image">
+                <h3>Track Academic Progress</h3>
+                <p>Keep track of your academic performance over multiple semesters and see how you improve over time.</p>
+            </div>
+            <div class="feature">
+                <img src="path/to/feature3-image.jpg" alt="Feature 3 Image">
+                <h3>User-Friendly Interface</h3>
+                <p>Enjoy a clean, intuitive interface designed to make GPA calculation straightforward and hassle-free.</p>
+            </div>
+            <button id="prevFeature" class="btn">Previous</button>
+            <button id="nextFeature" class="btn">Next</button>
         </div>
     </section>
 
     <section id="about">
-        <h2>About</h2>
-        <p>This project was inspired by my experience by ccoming across student who couldn't calcluate their GPA scores when they wanted to apply to universities, also te ones who just want to keep track of their academics for improvement purposes. It is a portfolio project for Holberton School.</p>
-        <h3>Team Member - Vuyiswa Palesa Sibisi</h3>
-        <ul>
-            <li><a href="https://linkedin.com/in/username">LinkedIn</a></li>
-            <li><a href="https://github.com/username">GitHub</a></li>
-            <li><a href="https://twitter.com/username">Twitter</a></li>
-        </ul>
-        <h3>GitHub Repository</h3>
-        <a href="https://github.com/username/project-repo">Project Repository</a>
+        <div class="container">
+            <h2>About This Project</h2>
+            <p>This project was inspired by the many students I've encountered who struggled to calculate their GPA scores when enrolling in university or tracking their semester performance. The GPA Calculator aims to simplify this process, helping students stay on top of their academic achievements.</p>
+            <p>This is a Portfolio Project for Holberton School.</p>
+            <p>Connect with me:</p>
+            <ul>
+                <li><a href="https://linkedin.com/in/Vuyiswa Sibisi">LinkedIn</a></li>
+                <li><a href="https://github.com/98Kido">GitHub</a></li>
+                <li><a href="https://twitter.com/Paliie_Omuhle">Twitter</a></li>
+            </ul>
+            <p><a href="https://github.com/98Kido/GPA_Calculator">View the GitHub Repository for this Project</a></p>
+        </div>
     </section>
 
-    <section id="video">
-        <h2>Project Video</h2>
-        <video controls>
-            <source src="project-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </section>
+    <!-- Modal Window -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
 
     <script src="scripts.js"></script>
 </body>
